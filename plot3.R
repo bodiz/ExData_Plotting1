@@ -20,7 +20,7 @@ plotdata<-raw[raw$date %within% interval(ymd("20070201"),ymd("20070202")),]
 png("plot3.png")
 plot(x=plotdata$datetime, y=plotdata$Sub_metering_1, 
      type="l", col="black",
-     ylab = "Energy sub metering"
+     ylab = "Energy sub metering", xlab=NA
      )
 lines(x=plotdata$datetime,y=plotdata$Sub_metering_2,type="l", col="red")
 lines(x=plotdata$datetime,y=plotdata$Sub_metering_3,type="l", col="blue")
