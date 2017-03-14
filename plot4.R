@@ -17,8 +17,8 @@ raw$Time<-NULL
 
 plotdata<-raw[raw$date %within% interval(ymd("20070201"),ymd("20070202")),]
 
-par(mfrow=c(2,2))
 png("plot4.png")
+par(mfrow=c(2,2))
 
 #1
 plot(x=plotdata$datetime, y=plotdata$Global_active_power, type="l",
